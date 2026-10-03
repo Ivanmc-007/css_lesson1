@@ -9,6 +9,9 @@
   <style>
     body {
       background-color: #e6e6e6;
+      /* Обнуляем дефолтные отступы самого body */
+      margin: 0;
+      padding: 5px 0;
     }
 
     h1 {
@@ -17,19 +20,25 @@
       font-weight: bold;
       text-align: center;
       background-color: white;
-      padding: 10px 25px;
       color: #25a561;
+      margin-right: 25px;
+      margin-left: 25px;
+      margin-top: 0;
+      margin-bottom: 10px;
+      letter-spacing: 0.47px;
     }
 
     h2 {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
-      font-size: 1.3em;
+      font-size: 1.3rem;
       /* Полужирное начертание */
       font-weight: 600;
       text-align: center;
       /* Межсимвольный интервал 1.1px*/
-      letter-spacing: 1.1px;
+      letter-spacing: 1.4px;
       color: black;
+      margin-top: 0;
+      margin-bottom: 19px;
     }
 
     h3 {
@@ -40,15 +49,55 @@
       /* Курсивное начертание */
       font-style: italic;
       text-align: center;
-      padding: 0 25px;
+      padding: 0 25px 0 25px;
       color: #25a561;
 
       /* Подробная запись верхней границы */
       border-top-width: 1px;
       border-top-style: solid;
-      border-top-color: #32686a
+      border-top-color: #32686a;
+      margin-right: 25px;
+      margin-left: 25px;
+      margin-top: 0;
+      margin-bottom: 7px;
+    }
+
+    p {
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 0.8rem;
+      /* Отступ красной строки */
+      text-indent: 3%;
+      text-align: justify;
+      padding: 0 25px;
+      margin-top: 0;
+      margin-bottom: 15px;
+      letter-spacing: 0.581px;
+      /* Добавим высоту строки */
+      line-height: 1.22;
+    }
+
+    p+p {
+      margin-top: -11px;
+    }
+
+    ul {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1.1rem;
+      /* Курсивное начертание */
+      font-style: italic;
+      color: #25a561;
+      margin-top: 0;
+      margin-bottom: 18px;
+    }
+
+    ul li {
+      /* Увеличим отступ между элементами списка */
+      margin-top: 0.10em;
+      margin-bottom: 0.10em;
+      letter-spacing: 0.17px;
     }
   </style>
+
 </head>
 
 <body>
